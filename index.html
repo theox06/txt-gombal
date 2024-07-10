@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gombal</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <!-- SweetAlert.Js -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+      <div class="mt-3">
+        <center><img src="3426526.jpg" height="250px" width="500px"></center>
+    
+      <h1 align="center">Talentday Programming</h1>
+      <h1 align="center">Mau ikut Talentday?</h1>
+      <div class="mr-4">
+        <center style="margin-left: -12rem; margin-top: 2rem;"><button type="button" class="btn btn-success" style="margin-right: 2rem;" onclick="btn()">Mau</button> <button id="btn_iya" onclick="bukan(this)" style="position: absolute;" align="center" class="btn btn-danger mr-3">Enggak</button></center>
+      </div>
+      </div>
+    
+   
+    <!-- Button trigger modal -->
+
+    
+  
+  
+  <!-- Modal -->
+  <!-- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          karena selain gula yang bisa membuat manis. ada dirimu yang membuat hidupku lebih manis. chuakzz
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+          <button type="button" class="btn btn-primary">Iya🗿</button>
+        </div>
+      </div>
+    </div>
+  </div> -->
+</body>
+<script>
+    function bukan(id)
+    {
+        var iya = document.getElementById("btn_iya");
+        var i = Math.floor(Math.random() * 200) + 1;
+        var j = Math.floor(Math.random() * 100) + iya.offsetTop;
+        id.style.left = i + "px";
+        id.style.top = j + "px";
+    }
+
+    function btn() {
+      swal.fire({
+        title: "Segera daftarkan dirimu!<br>Hari senin kuota penuh!",
+        icon: "success",
+        showCancelButton: true,
+        showConfirmButton: false,
+        cancelButtonText: "Aku Mau Daftar"
+      });
+    }
+</script>
+</html>
